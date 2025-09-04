@@ -26,3 +26,9 @@ elif risk_appetite == "medium":
     print("Recommended Investments: Balanced Mutual Funds, Bonds")
 elif risk_appetite == "low" or age > 50:
     print("Recommended Investments: Fixed Deposits, Gold, Government Bonds")
+
+# Debt Advice
+if debt_ratio > 40:
+    print("Your debt ratio is too high. Consider debt consolidation or reducing loans.")
+elif debt_ratio < 20:
+    print("Your debt is at a safe level. Maintain discipline.")
