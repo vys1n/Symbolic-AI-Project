@@ -13,8 +13,16 @@ months_expenses_in_emergency_fund = emergency_fund / expenses if expenses > 0 el
 
 # Savings Advice
 if monthly_savings <= 0:
-    print("⚠️ You are spending more than you earn. Reduce expenses immediately.")
+    print("You are spending more than you earn. Reduce expenses immediately.")
 elif savings_ratio < 20:
-    print("💡 Your savings ratio is low. Aim to save at least 20% of your income.")
+    print("Your savings ratio is low. Aim to save at least 20% of your income.")
 elif savings_ratio >= 30:
-    print("✅ You have a strong savings habit. Keep it up!")
+    print("You have a strong savings habit. Keep it up!")
+
+# Investment Advice
+if risk_appetite == "high" and age < 40:
+    print("Recommended Investments: Stocks, Mutual Funds, Index Funds")
+elif risk_appetite == "medium":
+    print("Recommended Investments: Balanced Mutual Funds, Bonds")
+elif risk_appetite == "low" or age > 50:
+    print("Recommended Investments: Fixed Deposits, Gold, Government Bonds")
