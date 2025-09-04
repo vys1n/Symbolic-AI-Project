@@ -1,0 +1,7 @@
+income = float(input("What is your monthly income (in $)? "))
+expenses = float(input("What are your monthly expenses (in $)? "))
+age = int(input("What is your age? "))
+risk_appetite = input("What is your risk appetite? (low/medium/high): ").lower()
+savings = float(input("How much do you have in savings (in $)? "))
+debt = float(input("What is your total debt (in $)? "))
+emergency_fund = float(input("How much have you saved for emergency fund (in $)? "))
