@@ -32,3 +32,9 @@ if debt_ratio > 40:
     print("Your debt ratio is too high. Consider debt consolidation or reducing loans.")
 elif debt_ratio < 20:
     print("Your debt is at a safe level. Maintain discipline.")
+
+# Emergency Fund Advice
+if months_expenses_in_emergency_fund < 6:
+    print("Build your emergency fund to cover at least 6 months of expenses.")
+else:
+    print("Your emergency fund is adequate.")
