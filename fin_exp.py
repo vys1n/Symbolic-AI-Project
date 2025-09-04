@@ -1,3 +1,6 @@
+print("Welcome to the Finance Expert System")
+print("Answer the following questions:\n")
+
 income = float(input("What is your monthly income (in $)? "))
 expenses = float(input("What are your monthly expenses (in $)? "))
 age = int(input("What is your age? "))
@@ -10,6 +13,8 @@ savings_ratio = (savings / (income * 12)) * 100  # % of yearly income
 debt_ratio = (debt / (income * 12)) * 100        # % of yearly income
 monthly_savings = income - expenses
 months_expenses_in_emergency_fund = emergency_fund / expenses if expenses > 0 else 0
+
+print("\nFinance Recommendations\n")
 
 # Savings Advice
 if monthly_savings <= 0:
@@ -38,3 +43,9 @@ if months_expenses_in_emergency_fund < 6:
     print("Build your emergency fund to cover at least 6 months of expenses.")
 else:
     print("Your emergency fund is adequate.")
+
+# Final Recommendation
+if monthly_savings > 0 and savings_ratio > 20 and months_expenses_in_emergency_fund >= 6:
+    print("\nOverall: You are on the right financial track! Keep investing and diversifying.\n")
+else:
+    print("\nOverall: Focus on improving savings, reducing debt, and building emergency funds.\n")
